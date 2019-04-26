@@ -1,0 +1,32 @@
+<!--==========================
+      Team Section
+    ============================-->
+<section id="team" class="section-bg">
+  <div class="container">
+    <div class="section-header">
+      <h3>Users</h3>
+      <p>
+        Datail of All Users
+      </p>
+    </div>
+
+    <div class="row">
+      <div
+        class="col-lg-3 col-md-6 wow fadeInUp"
+        data-wow-delay="0.1s"
+        *ngFor="let item of user_arr"
+      >
+        <div class="member">
+          <img src="assets/img/team-2.jpg" class="img-fluid" alt="" />
+          <div class="member-info">
+            <div class="member-info-content">
+              <h4>{{ item.user_name }}</h4>
+              <span>Mobile Number :- {{ item.user_mobile }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- #team -->
